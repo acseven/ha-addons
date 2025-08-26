@@ -14,3 +14,9 @@ schema:
  serialDevice: str
  baudRate: int
  port: port
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
