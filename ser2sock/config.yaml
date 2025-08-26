@@ -2,10 +2,16 @@ name: "ser2sock"
 version: "1.0.0"
 slug: "ser2sock"
 description: "Implementation of ser2sock for Home Assistant."
-url: "https://home-assistant.io/addons/ser2sock/"
+url: "https://github.com/acseven/ha-addons/tree/main/ser2sock"
 startup: "services"
 boot: "auto"
 uart: true
+arch:
+  - amd64
+  - armhf
+  - armv7
+  - aarch64
+  - i386
 
 options:
   serialDevice: "/dev/ttyAMA0"
@@ -16,3 +22,6 @@ schema:
   serialDevice: str
   baudRate: int
   port: port
+
+ports:
+  8100/tcp: 8100
